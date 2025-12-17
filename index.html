@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robert Mertens</title>
+    <style>
+        :root {
+            --bg-color: #111;
+            --text-color: #eee;
+            --accent-color: #3b82f6;
+        }
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            text-align: center;
+            max-width: 400px;
+            padding: 20px;
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            letter-spacing: -1px;
+        }
+        p {
+            color: #888;
+            margin-bottom: 2rem;
+            font-size: 1.1rem;
+        }
+        .links {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        .btn {
+            display: block;
+            padding: 12px 20px;
+            background: #222;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            border: 1px solid #333;
+            transition: all 0.2s ease;
+            font-weight: 500;
+        }
+        .btn:hover {
+            background: #333;
+            border-color: var(--accent-color);
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Robert Mertens</h1>
+    <p>Software dev</p>
+
+    <div class="links">
+        <a href="https://linkedin.com/in/rbmrts" class="btn" target="_blank">LinkedIn</a>
+        <a href="https://github.com/rbmr" class="btn" target="_blank">GitHub</a>
+    </div>
+</div>
+
+</body>
+</html>
