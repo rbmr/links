@@ -1,0 +1,102 @@
+:root {
+    --bg-color1: #020617;
+    --bg-color2: #0f172a;
+    --text-main: #f8fafc;
+    --text-muted: #94a3b8;
+    --accent-color: #3b82f6;
+    --card-bg: #1e293b;
+    --border-color: #334155;
+}
+
+body {
+    background-image: radial-gradient(circle at center, var(--bg-color2) 0%, var(--bg-color1) 100%);
+    color: var(--text-main);
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+main {
+    text-align: center;
+    animation: fadeIn 0.8s ease-out;
+}
+
+.avatar {
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    border: 2px solid var(--border-color);
+    margin-bottom: 1rem;
+    object-fit: cover;
+    background-color: var(--card-bg);
+}
+
+h1 {
+    font-size: 2rem;
+    margin: 0 0 0.5rem 0;
+    font-weight: 600;
+    letter-spacing: -0.025em;
+}
+
+.subtitle {
+    color: var(--text-muted);
+    margin-bottom: 2.5rem;
+    font-size: 1.125rem;
+    font-weight: 400;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 14px 20px;
+    background: var(--card-bg);
+    color: var(--text-main);
+    text-decoration: none;
+    border-radius: 12px;
+    border: 1px solid var(--border-color);
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.btn:hover {
+    background: #283549;
+    border-color: var(--accent-color);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+}
+
+.btn:active {
+    transform: translateY(0);
+}
+
+.btn svg {
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
+}
+
+footer {
+    margin-top: 4rem;
+    color: var(--text-muted);
+    font-size: 0.875rem;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
