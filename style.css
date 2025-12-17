@@ -90,6 +90,27 @@ h1 {
     fill: currentColor;
 }
 
+.email-section {
+    margin-top: 3rem;
+    text-align: center;
+}
+
+.email-label {
+    display: block;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    opacity: 0.7;
+    margin-bottom: 0.5rem;
+}
+
+.email-text {
+    font-family: monospace;
+    font-size: 1.1rem;
+    margin: 0;
+    user-select: all;
+}
+
 footer {
     margin-top: 4rem;
     color: var(--text-muted);
